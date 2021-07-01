@@ -21,19 +21,90 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
-
+		display: block;
+		background-color: #141414;
+		font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+		color: #fff;
+		margin: 0;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		width: 100%;
+		color: #141414;
 	}
-
+.logo{
+	height: 25px;
+}
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		left: 0;
+		right: 0;
 	}
-
+	ul{
+		list-style-type: none;
+		margin: 2em 0;
+		display: flex;
+		width: 858px;
+		justify-content: center;
+	}
+	h2{
+		font-size: 3.5vw;
+	}
+	li{
+		display: inline-block;
+		margin: 0 2vw 0 0;;
+		box-sizing: border-box;
+		border-radius: 4px;
+		border: .3em solid transparent;
+	}
+img{
+	width: 186px;
+}
+figcaption{
+	color: #141414;
+}
+button{
+	margin: 2em 0 1em 0;
+	font-size: 1.2vw;
+	border: 1px solid grey;
+	color: grey;
+	text-transform: uppercase;
+	padding: .5em 1.5em;
+	background-color: transparent;
+}
+@media(max-width: 480px){
+	body{
+		box-sizing: content-box;
+		width: 50%;
+	}
+	.logo{
+		position: relative;
+		display: flex;
+		right: 32px;
+		width: 3.9vh;
+		bottom: 17px;
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	ul{
+		flex-direction: column;
+		justify-content: center;
+	}
+	h2, button{
+		margin-left: 25px;
+	}
+}
