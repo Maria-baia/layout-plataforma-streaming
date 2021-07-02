@@ -56,6 +56,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		display: flex;
 		width: 858px;
 		justify-content: center;
+		padding: 0;
 	}
 	h2{
 		font-size: 3.5vw;
@@ -82,10 +83,9 @@ button{
 	padding: .5em 1.5em;
 	background-color: transparent;
 }
-@media(max-width: 480px){
+@media(max-width: 768px){
 	body{
-		box-sizing: content-box;
-		width: 50%;
+		width: 100%;
 	}
 	.logo{
 		position: relative;
@@ -101,8 +101,9 @@ button{
 		text-align: center;
 	}
 	ul{
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 	h2, button{
 		margin-left: 25px;
