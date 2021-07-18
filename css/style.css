@@ -37,9 +37,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	height: 25px;
 	position: relative;
 	display: flex;
-	right: 32px;
-	width: 8vh;
-	bottom: 17px;
+	width: 18vh;
+	bottom: 0;
 }
 /*RODAPÉ*/
 	
@@ -76,11 +75,18 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	.usuario:hover{
+		border: 1px solid #fff;
+	}
 img{
 	width: 186px;
 }
+figure{
+	display: flex;
+	justify-content: center;
+}
 figcaption{
-	color: #141414;
+	display: none;
 }
 button{
 	margin: 2em 0 1em 0;
@@ -115,9 +121,11 @@ ul{
 		width: 100vh;
 		column-gap: 50px;
 	}
+	figure{
+		justify-content: flex-start;
+	}
 	.logo{
-		width: 18vh;
-		bottom: 0;
+		width: 12vh;
 	}
 }
 @media (min-width: 1024px){
